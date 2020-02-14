@@ -62,4 +62,8 @@ pub struct iocb {
     pub aio_resfd: u32,
 }
 
-include!("./bindings.rs");
+#[cfg(target_os = "macos")]
+include!("./bindings/macos.rs");
+
+#[cfg(target_os = "linux")]
+include!("./bindings/linux.rs");

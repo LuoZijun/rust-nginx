@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Debian
+# apt install build-essential pkg-config zlib1g-dev libpcre3 libpcre3-dev libbz2-dev libssl-dev tar unzip
+
 # cd nginx && ./auto/configure \
 #     --builddir=build \
 #     --prefix=/usr/local
@@ -15,7 +18,7 @@ bindgen \
     --no-recursive-whitelist \
     --no-prepend-enum-name \
     --no-layout-tests \
-    wrapper.h > src/bindings.rs \
+    ./wrapper.h > ./src/bindings.rs \
     -- \
     -I "nginx/src/core" \
     -I "nginx/src/event" \
