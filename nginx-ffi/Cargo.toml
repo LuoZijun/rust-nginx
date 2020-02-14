@@ -1,0 +1,22 @@
+[package]
+name = "nginx-ffi"
+version = "1.17.8"
+authors = ["luozijun <luozijun.assistant@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "0.2"
+
+
+[features]
+default = [
+    # "zlib",
+    # "pcre",
+]
+
+# geoip   = [ "geoip-sys" ]
+# zlib    = [ "libz-sys" ]
+# pcre    = [ "libpcre-sys" ]
+# openssl = [ "openssl-sys" ]
